@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Attractions | Visit Lesotho</title>
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            scroll-behavior:smooth;
+        }
+
+        :root{
+            --gold:#d4af37;
+            --dark:#050b14;
+            --dark-light:#111827;
+            --white:#ffffff;
+            --gray:#d1d5db;
+        }
+
+        body{
+            font-family:'Segoe UI', sans-serif;
+            background:var(--dark);
+            color:white;
+            overflow-x:hidden;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header{
+            position:sticky;
+            top:0;
+            left:0;
+            width:100%;
+            padding:20px 8%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background:rgba(0,0,0,0.85);
+            backdrop-filter:blur(12px);
+            z-index:1000;
+            border-bottom:1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo{
+            font-size:2rem;
+            font-weight:bold;
+            color:var(--gold);
+            letter-spacing:3px;
+        }
+
+        nav{
+            display:flex;
+            gap:25px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:600;
+            position:relative;
+            transition:0.3s;
+        }
+
+        nav a::after{
+            content:'';
+            position:absolute;
+            left:0;
+            bottom:-5px;
+            width:0%;
+            height:2px;
+            background:var(--gold);
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:var(--gold);
+        }
+
+        nav a:hover::after{
+            width:100%;
+        }
+
+        /* =========================
+           PAGE TITLE
+        ========================= */
+
+        .page-title{
+            text-align:center;
+            padding:140px 20px 70px;
+        }
+
+        .page-title h1{
+            font-size:4.5rem;
+            color:var(--gold);
+            margin-bottom:20px;
+        }
+
+        .page-title p{
+            max-width:800px;
+            margin:auto;
+            color:#d1d5db;
+            line-height:2;
+            font-size:1.1rem;
+        }
+
+        /* =========================
+           CONTENT AREA
+        ========================= */
+
+        .content{
+            padding:0 8% 100px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+            gap:35px;
+        }
+
+        /* =========================
+           CARD DESIGN
+        ========================= */
+
+        .card{
+            background:var(--dark-light);
+            border-radius:22px;
+            overflow:hidden;
+            transition:0.5s;
+            box-shadow:0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        .card:hover{
+            transform:translateY(-12px);
+            box-shadow:0 15px 35px rgba(212,175,55,0.3);
+        }
+
+        .card-image{
+            overflow:hidden;
+        }
+
+        .card-image img{
+            width:100%;
+            height:280px;
+            object-fit:cover;
+            transition:0.8s;
+        }
+
+        .card:hover .card-image img{
+            transform:scale(1.1);
+        }
+
+        .card-content{
+            padding:30px;
+        }
+
+        .card-content h3{
+            color:var(--gold);
+            font-size:2rem;
+            margin-bottom:15px;
+        }
+
+        .card-content p{
+            color:#ddd;
+            line-height:1.9;
+            margin-bottom:25px;
+        }
+
+        /* =========================
+           BUTTON
+        ========================= */
+
+        .btn{
+            display:inline-block;
+            padding:14px 30px;
+            background:var(--gold);
+            color:black;
+            text-decoration:none;
+            border-radius:50px;
+            font-weight:bold;
+            transition:0.4s;
+        }
+
+        .btn:hover{
+            background:white;
+            transform:translateY(-5px);
+            box-shadow:0 10px 25px rgba(212,175,55,0.4);
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer{
+            background:black;
+            text-align:center;
+            padding:30px;
+            color:#999;
+            border-top:1px solid rgba(255,255,255,0.1);
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media(max-width:900px){
+
+            header{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            .page-title h1{
+                font-size:3.2rem;
+            }
+
+        }
+
+        @media(max-width:600px){
+
+            nav{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .page-title{
+                padding-top:170px;
+            }
+
+            .page-title h1{
+                font-size:2.5rem;
+            }
+
+            .page-title p{
+                font-size:1rem;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            Visit Lesotho
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Travel Stories</a>
+            <a href="attractions.html">Attractions</a>
+            <a href="tips.html">Travel Tips</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+
+    </header>
+
+    <!-- PAGE TITLE -->
+
+    <section class="page-title">
+
+        <h1>Top Attractions</h1>
+
+        <p>
+            Discover the beauty of Lesotho through breathtaking waterfalls,
+            towering mountains, and unforgettable cultural adventures across
+            the Kingdom in the Sky.
+        </p>
+
+    </section>
+
+    <!-- CARDS SECTION -->
+
+    <section class="content">
+
+        <div class="cards">
+
+            <!-- CARD 1 -->
+
+            <div class="card">
+
+                <div class="card-image">
+                    <img src="https://www.kanaga-at.com/wp-content/uploads/2021/07/lesotho_cascate_semokong.jpg" alt="Maletsunyane Falls">
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Maletsunyane Falls</h3>
+
+                    <p>
+                        Located near Semonkong, Maletsunyane Falls is one of Africa’s highest
+                        single-drop waterfalls. Visitors enjoy hiking, photography, sightseeing,
+                        and the famous 204-meter abseiling adventure.
+                    </p>
+
+                    <a href="#" class="btn">Learn More</a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="card">
+
+                <div class="card-image">
+                    <img src="https://cdn.britannica.com/02/141502-050-C1EC4CAB/Drakensberg-mountains-South-Africa.jpg" alt="Maluti Mountains">
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Maluti Mountains</h3>
+
+                    <p>
+                        The Maluti Mountains offer breathtaking scenery, hiking trails,
+                        fresh mountain air, and snowy landscapes during winter,
+                        making them ideal for nature lovers.
+                    </p>
+
+                    <a href="#" class="btn">Learn More</a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="card">
+
+                <div class="card-image">
+                    <img src="https://b-cdn.springnest.com/media/img/1ig/ponytrek1.jpeg?crop=2048%2C1024%2C0%2C332&width=1500" alt="Pony Trekking">
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Pony Trekking</h3>
+
+                    <p>
+                        Experience traditional Basotho culture by riding mountain ponies
+                        through remote villages, valleys, rivers, and scenic highland landscapes.
+                    </p>
+
+                    <a href="#" class="btn">Learn More</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Visit Lesotho | All Rights Reserved
+    </footer>
+
+</body>
+</html>

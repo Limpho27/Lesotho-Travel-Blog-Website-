@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Destination Travel Blog and Digital Storytelling Website</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- LOADER -->
+<div class="loader">
+    <h1>
+        <span>T</span>
+        <span>S</span>
+        <span>E</span>
+        <span>B</span>
+        <span>A</span>
+
+        <!-- SPACE BETWEEN WORDS -->
+        <span class="space"></span>
+        
+
+        <span>L</span>
+        <span>E</span>
+        <span>S</span>
+        <span>O</span>
+        <span>T</span>
+        <span>H</span>
+        <span>O</span>
+    </h1>
+</div>
+    <!-- SVG ICON -->
+    <svg style="display:none">
+        <symbol id="arrow" viewBox="0 0 24 24">
+            <path fill="currentColor"
+            d="M12 2l8 8-8 8-1.4-1.4L16.2 11H4v-2h12.2L10.6 3.4z"/>
+        </symbol>
+    </svg>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">LS</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Travel Stories</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="tips.html">Travel Tips</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+        <a href="#places" class="btn">Explore</a>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="small-title">KINGDOM IN THE SKY</p>
+
+            <h1>
+                Discover The Hidden Beauty Of Lesotho
+            </h1>
+
+            <p class="hero-text">
+                Mountains above the clouds, breathtaking waterfalls,
+                Basotho culture, scenic horse trails,
+                and unforgettable African adventures.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#places" class="btn">
+                    Start Journey
+                </a>
+
+                <a href="#story" class="glass-btn">
+                    Learn More
+
+                    <svg>
+                        <use href="#arrow"></use>
+                    </svg>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STORY -->
+    <section class="story" id="story">
+
+        <div class="story-image">
+            <img src="https://pbs.twimg.com/media/GSXrf9xXEAE7CLe.jpg">
+        </div>
+
+        <div class="story-content">
+
+            <p class="section-subtitle">THE STORY</p>
+
+            <h2>The Soul Of Lesotho</h2>
+
+            <p>
+                Deep in Southern Africa lies a mountain kingdom untouched by time.
+                Lesotho rises above the clouds with dramatic landscapes,
+                ancient traditions, and authentic adventure.
+            </p>
+
+            <p>
+                From the thunder of Maletsunyane Falls to the legendary Sani Pass,
+                every journey through Lesotho becomes a story worth remembering.
+            </p>
+
+            <a href="#places" class="btn">
+                Explore Destinations
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- PARALLAX -->
+    <section class="parallax">
+
+        <div class="parallax-content">
+            <h2>
+                “Adventure lives in every mountain.”
+            </h2>
+        </div>
+
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section class="destinations" id="places">
+
+        <div class="section-title">
+
+            <p class="section-subtitle">TOP DESTINATIONS</p>
+
+            <h2>Places To Explore</h2>
+
+        </div>
+
+        <div class="cards">
+
+            <!-- CARD 1 -->
+            <div class="card">
+
+                <img src="data:image/jpeg;base64,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">
+
+                <div class="card-content">
+
+                    <h3>Maletsunyane Falls</h3>
+
+                    <p>
+                        One of Africa’s tallest single-drop waterfalls,
+                        surrounded by dramatic cliffs and valleys.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj3I4AqrYO1Ovyp2nhQo2sxChg_-6-P9e16Q&s">
+
+                <div class="card-content">
+
+                    <h3>Sani Pass</h3>
+
+                    <p>
+                        A legendary mountain route filled with scenic curves,
+                        clouds, and unforgettable views.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card">
+
+                <img src="https://www.ghadiscovery.com/var/site/storage/images/7/4/1/9/479147-8-eng-GB/962b5b0ecf7d-thaba_bosiu_gha_image_1920x1080.jpg">
+
+                <div class="card-content">
+
+                    <h3>Thaba-Bosiu</h3>
+
+                    <p>
+                        Historic mountain fortress and birthplace
+                        of the Basotho nation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="experience">
+
+        <div class="exp-box">
+
+            <h3>Adventure</h3>
+
+            <p>
+                Explore mountain trails, pony trekking,
+                hiking routes, Ice Skating and scenic drives.
+            </p>
+
+        </div>
+
+        <div class="exp-box">
+
+            <h3>Culture</h3>
+
+            <p>
+                Discover Basotho traditions,
+                blankets, villages, music, and heritage.
+            </p>
+
+        </div>
+
+        <div class="exp-box">
+
+            <h3>Nature</h3>
+
+            <p>
+                Experience untouched valleys,
+                rivers, waterfalls, and mountain skies.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="cta" id="contact">
+
+        <div class="cta-content">
+
+            <p class="section-subtitle">PLAN YOUR TRIP</p>
+
+            <h2>
+                Your Journey Begins Here
+            </h2>
+
+            <p>
+                Experience one of Africa’s most beautiful destinations
+                with unforgettable adventures and breathtaking landscapes.
+            </p>
+
+            <a href="#" class="btn">
+                Book Adventure
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+         </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>  
+            © 2026 Visit Lesotho | Tourism Experience
+        </p>
+
+        <p>Designed By Proffesors</p>
+         <div class="social-icons">
+
+        <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="https://instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://twitter.com" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="https://youtube.com" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+    </div>
+    </footer>
+
+
+      
+    </footer>
+
+</body>
+</html>

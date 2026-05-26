@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Stories</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#111;
+            color:white;
+            overflow-x:hidden;
+        }
+
+        /* HEADER ANIMATION */
+        header{
+            background:#000;
+            padding:20px;
+            text-align:center;
+            animation:slideDown 1.2s ease;
+        }
+
+        @keyframes slideDown{
+            from{
+                transform:translateY(-100px);
+                opacity:0;
+            }
+            to{
+                transform:translateY(0);
+                opacity:1;
+            }
+        }
+
+        header h1{
+            color:white;
+            margin-bottom:10px;
+            font-size:40px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:gold;
+            letter-spacing:1px;
+        }
+
+        /* CONTENT SECTION */
+        .content{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:30px;
+            padding:40px;
+        }
+
+        /* CARD ANIMATION */
+        .card{
+            width:350px;
+            background:#1f1f1f;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 5px 15px rgba(0,0,0,0.5);
+            transition:transform 0.5s, box-shadow 0.5s;
+            animation:fadeUp 1.5s ease;
+        }
+
+        @keyframes fadeUp{
+            from{
+                opacity:0;
+                transform:translateY(80px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        .card:hover{
+            transform:translateY(-10px) scale(1.03);
+            box-shadow:0 10px 25px rgba(255,255,255,0.2);
+        }
+
+        /* IMAGE EFFECT */
+        .card img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+            transition:transform 0.5s;
+        }
+
+        .card:hover img{
+            transform:scale(1.1);
+        }
+
+        .card h3{
+            color:white;
+            padding:15px 15px 10px;
+            font-size:24px;
+        }
+
+        .card p{
+            color:#f1f1f1;
+            padding:0 15px 15px;
+            line-height:1.7;
+        }
+
+        /* FOOTER */
+        footer{
+            background:#000;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+            animation:fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+            }
+            to{
+                opacity:1;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Travel Stories</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Travel Stories</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="tips.html">Travel Tips</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+</header>
+
+<div class="content">
+
+    <div class="card">
+
+        <img src="https://africanlanders.com/wp-content/uploads/2023/05/1675022663360.jpg" alt="Thaba Bosiu">
+
+        <h3>The Founding of Thaba Bosiu</h3>
+
+        <p>
+            Thaba Bosiu became the mountain fortress of King Moshoeshoe I in the early 1800s. 
+            The name “Thaba Bosiu” means “Mountain at Night” because the mountain was believed 
+            to grow larger after sunset, making it difficult for enemies to attack.
+        </p>
+
+        <p>
+            During times of conflict and invasion, Moshoeshoe I used the mountain as a place of safety 
+            for the Basotho people. The natural cliffs and steep sides protected thousands of people 
+            from enemy attacks and helped preserve Basotho culture and traditions.
+        </p>
+
+        <p>
+            Today, Thaba Bosiu remains one of Lesotho’s most important historical landmarks and is 
+            visited by tourists, historians, and students who want to learn more about the origins 
+            of the Basotho nation.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <img src="https://www.kids-world-travel-guide.com/images/lesothomap.jpg" alt="Basotho Kingdom">
+
+        <h3>The Basotho Kingdom</h3>
+
+        <p>
+            The Basotho Kingdom was formed under the leadership of King Moshoeshoe I, who united 
+            different clans and communities into one strong nation during a difficult period in 
+            Southern African history.
+        </p>
+
+        <p>
+            Moshoeshoe I became respected for his intelligence, peaceful diplomacy, and ability 
+            to negotiate with neighboring tribes and European settlers. Instead of relying only 
+            on war, he often used dialogue and cooperation to protect his people.
+        </p>
+
+        <p>
+            The kingdom grew stronger through unity, cultural identity, and shared traditions. 
+            Even today, Moshoeshoe I is remembered as the founder of the Basotho nation and one 
+            of Africa’s greatest leaders.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <img src="https://www.delcampe.net/static/img_large/auction/001/652/204/687_001.jpg?v=1" alt="Lesotho Independence">
+
+        <h3>Lesotho’s Independence</h3>
+
+        <p>
+            Lesotho gained independence from British colonial rule on 4 October 1966 and officially 
+            became a sovereign nation. Before independence, the country was known as Basutoland.
+        </p>
+
+        <p>
+            Independence was an important milestone because it allowed the people of Lesotho to govern 
+            themselves, protect their cultural identity, and build their own future as a nation.
+        </p>
+
+        <p>
+            Every year, Independence Day is celebrated with national events, traditional dances, music, 
+            military parades, and speeches that honor the country’s history, freedom, and achievements.
+        </p>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Visit Lesotho
+</footer>
+
+</body>
+</html>
